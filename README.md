@@ -3,7 +3,9 @@
 Modern scalable ecommerce frontend built using Next.js 16, TypeScript, Tailwind CSS, and ASP.NET Core Web API backend.
 
 ---
-
+---
+https://shopnext-client.vercel.app/
+---
 # Preview
 
 ## Home Page
