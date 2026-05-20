@@ -1,36 +1,241 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShopNext Client
 
-## Getting Started
+Modern scalable ecommerce frontend built using Next.js 16, TypeScript, Tailwind CSS, and ASP.NET Core Web API backend.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Preview
+
+## Home Page
+
+![Home Page](./public/readme/home.png)
+
+---
+
+## Product Detail Page
+
+![Product Detail](./public/readme/product.png)
+
+---
+
+## Mobile Responsive UI
+
+![Mobile UI](./public/readme/mobile.png)
+
+---
+
+# Tech Stack
+
+## Frontend
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- Axios
+- Zustand
+- GSAP
+- Framer Motion
+- React Query
+- Shadcn UI
+
+---
+
+## Backend
+
+Backend API:
+
+```txt
+https://shopnext-bz8l.onrender.com/api
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Swagger:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```txt
+https://shopnext-bz8l.onrender.com/swagger
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Backend built using:
 
-## Learn More
+- ASP.NET Core 8 Web API
+- Entity Framework Core
+- PostgreSQL
+- JWT Authentication
+- Cloudinary
+- Razorpay
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Features Implemented
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Home Page
 
-## Deploy on Vercel
+- Responsive Navbar
+- Category Navigation
+- Hero Banner Slider
+- Featured Categories
+- Featured Products
+- Newsletter
+- Footer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Product System
+
+- Product Listing Page
+- Product Detail Page
+- SEO-friendly Product Slugs
+- Responsive Product Cards
+- Trending Products Section
+- Product Information Section
+- Offer Placeholder
+- Buy Now Button
+- Wishlist Placeholder
+- Compare Placeholder
+
+---
+
+## API Integration
+
+Integrated APIs:
+
+```txt
+GET /api/banner
+GET /api/category
+GET /api/product/search
+GET /api/product/{id}
+```
+
+---
+
+# Folder Structure
+
+```txt
+src/
+├── app/
+├── components/
+├── services/
+├── lib/
+├── store/
+├── hooks/
+└── types/
+```
+
+---
+
+# Current Routes
+
+```txt
+/
+ /products
+ /products/[slug]
+```
+
+Example slug:
+
+```txt
+/products/premium-headphones-4
+```
+
+---
+
+# Environment Variables
+
+Create:
+
+```txt
+.env.local
+```
+
+Add:
+
+```env
+NEXT_PUBLIC_API_URL=https://shopnext-bz8l.onrender.com/api
+```
+
+---
+
+# Installation
+
+```bash
+git clone https://github.com/imshivendra29/ShopNext-client.git
+
+cd ShopNext-client
+
+npm install
+
+npm run dev
+```
+
+---
+
+# Responsive Design
+
+The UI is fully responsive:
+
+- Mobile-first
+- Tablet optimized
+- Desktop optimized
+- Horizontal category scrolling
+- Compact mobile product cards
+
+---
+
+# Planned Features
+
+- Authentication
+- Cart System
+- Checkout Flow
+- Address Management
+- Razorpay Integration
+- Review System
+- Product Comparison
+- Wishlist
+- Skeleton Loading
+- Dark Mode
+- Product Gallery
+- Search Suggestions
+- Admin Dashboard
+
+---
+
+# Architecture
+
+Frontend follows scalable architecture:
+
+```txt
+Page
+ ↓
+Service Layer
+ ↓
+Central API Client
+ ↓
+Backend API
+```
+
+---
+
+# Performance Goals
+
+- SSR rendering
+- SEO-friendly URLs
+- Optimized image loading
+- Component-based architecture
+- Future scalable structure
+
+---
+
+# Author
+
+## Shivendra Pratap Singh
+
+GitHub:
+
+```txt
+https://github.com/imshivendra29
+```
+
+Portfolio:
+
+```txt
+https://shivendrasingh.vercel.app
+```
