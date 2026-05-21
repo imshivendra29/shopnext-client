@@ -26,7 +26,7 @@ export default async function Home() {
       <HeroSection banners={banners} />
 
      
-      <FeaturedCategories categories={categories} />
+ 
      <FeaturedProducts products={products} />
       <PromoBanner />
       <Newsletter />
