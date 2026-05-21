@@ -3,7 +3,7 @@ import MainNavbar from "@/components/home/MainNavbar";
 import CategoryNav from "@/components/home/CategoryNav";
 import HeroSection from "@/components/home/HeroSection";
 
-import FeaturedCategories from "@/components/home/FeaturedCategories";
+
 import FeaturedProducts from "@/components/products/FeaturedProducts";
 import PromoBanner from "@/components/home/PromoBanner";
 import Newsletter from "@/components/home/Newsletter";
