@@ -21,7 +21,7 @@ export default async function Home() {
   return (
     <main className="min-h-screen bg-[#F8F8F8] text-zinc-900">
       <TopBar />
-      <MainNavbar categories={categories} />
+      <MainNavbar  />
       <CategoryNav categories={categories} />
       <HeroSection banners={banners} />
 
