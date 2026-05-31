@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Heart, ShoppingCart, Star } from "lucide-react";
-import type { Product } from "@/services/product.service";
+
 import { createProductSlug } from "@/lib/slug";
+import { Product } from "../api/product.service";
 
 type ProductCardProps = {
   product: Product;

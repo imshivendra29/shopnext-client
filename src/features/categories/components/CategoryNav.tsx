@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import type { Category } from "@/services/category.service";
+import type { Category } from "../api/category.service";
 
 type CategoryNavProps = {
   categories: Category[];

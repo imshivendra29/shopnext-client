@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ProductCard from "./ProductCard";
-import type { Product } from "@/services/product.service";
+import { Product } from "../api/product.service";
 
 type FeaturedProductsProps = {
   products: Product[];
