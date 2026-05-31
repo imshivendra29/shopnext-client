@@ -4,8 +4,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { ShoppingBag, Mail, Lock } from "lucide-react";
-import { loginUser, saveToken } from "@/services/auth.service";
-import { useAuth } from "@/context/AuthContext";
+import { loginUser, saveToken } from "@/features/auth/api/auth.service";
+import { useAuth } from "@/features/auth/AuthContext";
+
 export default function LoginPage() {
     const router = useRouter();
 const { refreshUser } = useAuth();

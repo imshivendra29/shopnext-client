@@ -1,5 +1,4 @@
-import { api } from "./api";
-
+import { api } from "@/core/api/api";
 export type Banner = {
   id: number;
   imageUrl: string;

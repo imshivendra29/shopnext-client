@@ -1,4 +1,5 @@
-import { api } from "./api";
+import { api } from "@/core/api/api";
+
 
 export type Category = {
   id: number;

@@ -1,15 +1,12 @@
+
+import { getCategories } from "@/features/categories/api/category.service";
+import CategoryNav from "@/features/categories/components/CategoryNav";
+import { getFeaturedProducts } from "@/features/products/api/product.service";
+import ProductCard from "@/features/products/components/ProductCard";
+import Footer from "@/shared/layout/Footer";
+import MainNavbar from "@/shared/layout/MainNavbar";
+import TopBar from "@/shared/layout/TopBar";
 import Link from "next/link";
-
-import MainNavbar from "@/components/home/MainNavbar";
-import TopBar from "@/components/home/TopBar";
-import CategoryNav from "@/components/home/CategoryNav";
-
-import Footer from "@/components/layout/Footer";
-
-import ProductCard from "@/components/products/ProductCard";
-
-import { getCategories } from "@/services/category.service";
-import { getFeaturedProducts } from "@/services/product.service";
 
 type ProductsPageProps = {
   searchParams: Promise<{

@@ -7,12 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import {
-  getProfile,
-  getToken,
-  logoutUser,
-  type UserProfile,
-} from "@/services/auth.service";
+import { getProfile, getToken, logoutUser, UserProfile } from "./api/auth.service";
 
 type AuthContextType = {
   user: UserProfile | null;

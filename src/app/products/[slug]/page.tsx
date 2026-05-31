@@ -11,20 +11,16 @@ import {
   Zap,
   Tag,
 } from "lucide-react";
-
-import TopBar from "@/components/home/TopBar";
-import MainNavbar from "@/components/home/MainNavbar";
-import CategoryNav from "@/components/home/CategoryNav";
-import Newsletter from "@/components/home/Newsletter";
-import Footer from "@/components/layout/Footer";
-import ProductCard from "@/components/products/ProductCard";
-
-import { getCategories } from "@/services/category.service";
-import {
-  getFeaturedProducts,
-  getProductById,
-} from "@/services/product.service";
 import { getIdFromSlug } from "@/lib/slug";
+import { getCategories } from "@/features/categories/api/category.service";
+import { getFeaturedProducts, getProductById } from "@/features/products/api/product.service";
+import TopBar from "@/shared/layout/TopBar";
+import MainNavbar from "@/shared/layout/MainNavbar";
+import CategoryNav from "@/features/categories/components/CategoryNav";
+import Newsletter from "@/shared/components/Newsletter";
+import Footer from "@/shared/layout/Footer";
+import ProductCard from "@/features/products/components/ProductCard";
+
 
 type ProductDetailPageProps = {
   params: Promise<{
