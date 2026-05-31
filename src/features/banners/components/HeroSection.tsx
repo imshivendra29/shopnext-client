@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import type { Banner } from "@/services/banner.service";
+import { Banner } from "../api/banner.service";
 
 type HeroSectionProps = {
   banners: Banner[];
